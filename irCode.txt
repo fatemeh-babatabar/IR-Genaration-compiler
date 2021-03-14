@@ -1,0 +1,61 @@
+proc sum
+	add r0, r0, r1
+	mov r2 ,3
+	add r0, r0, r2
+	ret
+proc main
+	mov r3 ,3
+	mov r4 , 8
+	mul r3 , r3 , r4
+	call mem , r3
+	mov r1 ,r3
+	mov r5 ,0
+	mov r6 , 1
+	add r6 , r6 , r5
+	mov r7 ,8
+	mul r7 ,r6 ,r7
+	add r1 ,r1 ,r7
+	mov r8 ,r1
+	sub r1 ,r1 ,r7
+	mov r9 ,2
+	st r9 ,r8
+	mov r12 ,10
+	mov r10 ,r12
+	mov r15 ,1
+	mov r13 ,r15
+lab1:
+	mov r16 ,15
+	cmp<  r17, r10, r16
+	mov r18 , 0
+	jz r17 , lab2
+	mov r19 ,1
+	cmp==  r20, r13, r19
+	mov r18 , r20
+lab2:
+	mov r21 , 1
+	jnz r18 , lab3
+	mov r22 ,15
+	cmp==  r23, r10, r22
+	mov r21 , r23
+lab3:
+	jz r21 , lab4
+	mov r24 ,0
+	mov r25 , 1
+	add r25 , r25 , r24
+	mov r26 ,8
+	mul r26 ,r25 ,r26
+	add r1 ,r1 ,r26
+	mov r27 ,r1
+	sub r1 ,r1 ,r26
+	ld r28 ,r27
+	call sum ,r28 ,r13
+	call iput , r28
+	mov r29 ,1
+	add r10, r10, r29
+	mov r10 ,r10
+	jmp lab1
+lab4:
+	mov r29 ,0
+	mov r0 , r29
+	ret
+	call rel , r1
