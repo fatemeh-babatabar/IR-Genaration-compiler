@@ -1,6 +1,8 @@
 # IR-Genaration
+
    example 
-       teslang code :
+   
+   teslang code :
         
             num sum(num a , num b){
                 return a+b+3;
