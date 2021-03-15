@@ -16,7 +16,7 @@
   IR code :
   
        proc sum
-	    add r0, r0, r1
+	       add r0, r0, r1
 	    mov r2 ,3
 	    add r0, r0, r2
 	    ret
