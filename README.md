@@ -1,6 +1,5 @@
-# IR-Genaration
 
-   # example 
+# example 
    
    teslang code :
         
