@@ -16,10 +16,10 @@
   IR code :
   
        proc sum
-	       add r0, r0, r1
-	    mov r2 ,3
-	    add r0, r0, r2
-	    ret
+	        add r0, r0, r1
+	        mov r2 ,3
+	        add r0, r0, r2
+	        ret
       proc main
            mov r3 ,1
            mov r4 ,2
